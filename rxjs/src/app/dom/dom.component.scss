@@ -1,0 +1,10 @@
+.psuedo {
+    &::after{
+        content: '.';
+        color: red;
+    }
+    &::first-letter {
+        color: green;
+        text-transform: uppercase;
+    }
+}

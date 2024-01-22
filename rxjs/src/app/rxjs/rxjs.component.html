@@ -1,0 +1,27 @@
+<!-- RXJS -->
+
+<!-- <button type="button" #buttonRef (click)="fromEventButton()">
+  Button observable
+</button>
+<div [formGroup]="searchForm">
+  <input type="text" formControlName="searchField">
+</div> -->
+
+
+<!-- async pipe -->
+
+<div *ngFor="let data of filteredUser$ | async">
+  {{data.name}}
+</div>
+
+
+
+<!-- ngTemplateOutlet example -->
+
+<!-- <p>without ngTemplate</p>
+
+<ng-template #template let-data1="data1" let-data2="data2" let-data>
+  with template {{data1}} -> {{data2}} -> {{data}}
+</ng-template>
+
+<div [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{data1: 'data1', data2: 'data2',$implicit:'implisscit'}"></div> -->
